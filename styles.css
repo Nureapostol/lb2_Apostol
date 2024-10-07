@@ -1,0 +1,45 @@
+.container{
+    background-color: rgb(85, 80, 80);
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 800px;height: 120px;
+}
+.radio{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.radio1{
+    order: 3;
+    background-color: green;
+}
+.radio2{
+    order: 4;
+    background-color: blue;
+}
+.radio3{
+    order: 1;
+    background-color: blue;
+}
+.radio4{
+    order: 2;
+    background-color: red;
+}
+input[type="radio"]{
+    display: none;
+}
+input#radio1:checked + .radio1{
+    background-color: aqua;
+}
+input#radio2:checked + .radio2{
+    background-color: rgb(132, 0, 255);
+}
+input#radio3:checked + .radio3{
+    background-color: rgb(255, 0, 0);
+}
+input#radio4:checked + .radio4{
+    background-color: rgb(21, 255, 0);
+}
